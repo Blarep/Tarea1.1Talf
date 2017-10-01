@@ -95,20 +95,20 @@
     Dado que $R_{1}$ es el correspondiente al estado $1$, el cual es el inicial, se llega a el consumiendo solamente $\epsilon$, para el resto de expresiones $R_{n}$, su ecuación fue confecionada visualizando el autómata. 
     \begin{align*}
     &R_{1}=\epsilon \\
-    &\text{A $R_2$ solo se puede llegar desde $R_1$ consumiendo /}\\
+    &\text{A $R_2$ solo se puede llegar desde $R_1$ consumiendo /.}\\
     &R_{2}=R_{1}/\\
     &\text{Para $R_3$ podemos llegar desde $R_2$ consumiendo s, desde el mismo consumiendo a,n o /, o}\\
-    &\text{desde $R_4$ consumiendo a o n}\\
+    &\text{desde $R_4$ consumiendo a o n.}\\
     &R_{3}=R_{2}s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n\\
-    &\text{A $R_4$ se puede llegar desde $R_3$ consumiendo s, o desde el mismo consumiendo s}\\
+    &\text{A $R_4$ se puede llegar desde $R_3$ consumiendo s, o desde el mismo consumiendo s.}\\
     &R_{4}=R_{3}s|R_{4}s
     \end{align*}
     \begin{align*}
-    &\text{Para $R_5$ se tiene que solo se puede llegar desde $R_4$ consumiendo /}\\
+    &\text{Para $R_5$ se tiene que solo se puede llegar desde $R_4$ consumiendo /.}\\
     &R_{5}=R_{4}/\\
-    &\text{Para $R_6$ se puede llegar consumiendo / desde $R_2$ o desde el mismo consumiendo s o a}\\
+    &\text{Para $R_6$ se puede llegar consumiendo / desde $R_2$ o desde el mismo consumiendo s o a.}\\
     &R_{6}=R_{2}/|R_{6}/|R{6}s|R_{6}a\\
-    &\text{Por último, para $R_7$ se tiene que se puede llegar a el desde $R_6$ consumiendo n}\\
+    &\text{Por último, para $R_7$ se tiene que se puede llegar a el desde $R_6$ consumiendo n.}\\
     &R_{7}=R_{6}n
     \end{align*}
     Finalmente tenemos el sistema:
@@ -121,7 +121,6 @@
     R_{6}&=R_{2}/|R_{6}/|R{6}s|R_{6}a\\
     R_{7}&=R_{6}n\\
 	\end{align*}
-     
   \item % 20172t2p2
     \label{ques:20172t2p2}
     Dé la expresión regular para el lenguaje aceptado por el autómata
@@ -134,7 +133,7 @@
     &R_{2}=R_{1}/\\
     &\text{Reemplazando $R_2$ en $R_3$.}\\
     &R_{3}=R_{2}s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n \Rightarrow  R_{3}=R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n\\
-    &\text{Ahora, en $R_4$ reemplazamos $R_3$}\\
+    &\text{Ahora, en $R_4$ reemplazamos $R_3$.}\\
     &R_4=R_{3}s|R_{4}s \Rightarrow R_4=(R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s\\
     &\text{En $R_5$ finalmente nos queda:}\\
     &R_{5}=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/\\
@@ -142,8 +141,7 @@
     &R_6=R_{2}/|R_{6}/|R{6}s|R_{6}a \Rightarrow R_6=R_{1}//|R_{6}/|R{6}s|R_{6}a\\
     &\text{Finalmente $R_7$ queda como:}\\
     &R_7=R_6n \Rightarrow R_7=(R_{1}//|R_{6}/|R{6}s|R_{6}a)n\\
-    \end{align*}
-    
+    \end{align*}    
     Dado que nuestro DFA tiene dos estados finales, nuestra expresion regular estará dada por los $R_n$ correspondientes a estos
     dos estados. Estos estados corresponden al 5 y al 7, por lo que nuesto RE sería:
     \begin{align*}
@@ -219,9 +217,6 @@
     &RE=/s(/|a|n)^*s^+((a|n)(/|n|a)^*s^+)^*/|//(/|s|a)^*n
     \end{align*}
   \end{enumerate}
-
-\input{condiciones}
-  \vfill\hfill LW/HvB/\LaTeXe
 \end{document}
 
 %%% Local Variables:
