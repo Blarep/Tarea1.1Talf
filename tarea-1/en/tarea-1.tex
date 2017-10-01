@@ -137,8 +137,19 @@
     &\text{Ahora, en $R_4$ reemplazamos $R_3$}\\
     &R_4=R_{3}s|R_{4}s \Rightarrow R_4=(R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s\\
     &\text{En $R_5$ finalmente nos queda:}\\
-    R_{5}&=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/\\
-    &\text{Por otro lado, reemplazando R}
+    &R_{5}=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/\\
+    &\text{Por otro lado, reemplazando $R_2$ en $R_6$:}\\
+    &R_6=R_{2}/|R_{6}/|R{6}s|R_{6}a \Rightarrow R_6=R_{1}//|R_{6}/|R{6}s|R_{6}a\\
+    &\text{Finalmente $R_7$ queda como:}\\
+    &R_7=R_6n \Rightarrow R_7=(R_{1}//|R_{6}/|R{6}s|R_{6}a)n\\
+    \end{align*}
+    
+    Dado que nuestro DFA tiene dos estados finales, nuestra expresion regular estará dada por los $R_n$ correspondientes a estos
+    dos estados. Estos estados corresponden al 5 y al 7, por lo que nuesto RE sería:
+    \begin{align*}
+	&RE=R_5 | R_7\\
+    &\text{Si reemplazamos con lo obtenido:}\\
+    &RE=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/|(R_{1}//|R_{6}/|R{6}s|R_{6}a)n
     \end{align*}
         
   \item % 20172p2t3
@@ -199,6 +210,13 @@
     \begin{align*}
     &\text{Reemplazando $R_6$:}\\
     &R_7=R_6n \Rightarrow R_7=//(/|s|a)^*n
+    \end{align*}
+    
+    Con lo respondido en la pregunta 2, sabemos que la RE esta descrita por:
+    \begin{align*}
+    &RE=R_5|R_7\\
+    &\text{Reemplazando con lo obtenido:}\\
+    &RE=/s(/|a|n)^*s^+((a|n)(/|n|a)^*s^+)^*/|//(/|s|a)^*n
     \end{align*}
   \end{enumerate}
 
