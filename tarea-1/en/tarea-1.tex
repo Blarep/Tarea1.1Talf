@@ -107,7 +107,7 @@
     &\text{Para $R_5$ se tiene que solo se puede llegar desde $R_4$ consumiendo /.}\\
     &R_{5}=R_{4}/\\
     &\text{Para $R_6$ se puede llegar consumiendo / desde $R_2$ o desde el mismo consumiendo s o a.}\\
-    &R_{6}=R_{2}/|R_{6}/|R{6}s|R_{6}a\\
+    &R_{6}=R_{2}/|R_{6}/|R_{6}s|R_{6}a\\
     &\text{Por último, para $R_7$ se tiene que se puede llegar a el desde $R_6$ consumiendo n.}\\
     &R_{7}=R_{6}n
     \end{align*}
@@ -118,7 +118,7 @@
     R_{3}&=R_{2}s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n\\
     R_{4}&=R_{3}s|R_{4}s\\
     R_{5}&=R_{4}/\\
-    R_{6}&=R_{2}/|R_{6}/|R{6}s|R_{6}a\\
+    R_{6}&=R_{2}/|R_{6}/|R_{6}s|R_{6}a\\
     R_{7}&=R_{6}n\\
 	\end{align*}
   \item % 20172t2p2
@@ -138,16 +138,16 @@
     &\text{En $R_5$ finalmente nos queda:}\\
     &R_{5}=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/\\
     &\text{Por otro lado, reemplazando $R_2$ en $R_6$:}\\
-    &R_6=R_{2}/|R_{6}/|R{6}s|R_{6}a \Rightarrow R_6=R_{1}//|R_{6}/|R{6}s|R_{6}a\\
+    &R_6=R_{2}/|R_{6}/|R_{6}s|R_{6}a \Rightarrow R_6=R_{1}//|R_{6}/|R_{6}s|R_{6}a\\
     &\text{Finalmente $R_7$ queda como:}\\
-    &R_7=R_6n \Rightarrow R_7=(R_{1}//|R_{6}/|R{6}s|R_{6}a)n\\
+    &R_7=R_6n \Rightarrow R_7=(R_{1}//|R_{6}/|R_{6}s|R_{6}a)n\\
     \end{align*}    
     Dado que nuestro DFA tiene dos estados finales, nuestra expresion regular estará dada por los $R_n$ correspondientes a estos
     dos estados. Estos estados corresponden al 5 y al 7, por lo que nuesto RE sería:
     \begin{align*}
 	&RE=R_5 | R_7\\
     &\text{Si reemplazamos con lo obtenido:}\\
-    &RE=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/|(R_{1}//|R_{6}/|R{6}s|R_{6}a)n
+    &RE=((R_{1}/s|R_{3}/|R_{3}a|R_{3}n|R_{4}a|R_{4}n)s|R_4s)/|(R_{1}//|R_{6}/|R_{6}s|R_{6}a)n
     \end{align*}
         
   \item % 20172p2t3
